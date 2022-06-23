@@ -35,10 +35,6 @@ class Snake:
             self.segments[i].goto(*coords)
         self.head.forward(MOVE_DISTANCE)
 
-    # def self_collision(self):
-    #     if self.head.position() in [segment.position() for segment in self.snake[1:]]:
-    #         return True
-
     def up(self):
         if self.head.heading() != DOWN:
             self.head.setheading(UP)
